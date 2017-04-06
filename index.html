@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS -->
+<link rel="stylesheet" href="css/tema-app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/sustitucion.jpg')">
+
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> Contaminacion </h1>
+</div>
+<div>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image36','','imagenes/sustitucion.jpg',1)"><img src="imagenes/sustitucion1.jpg" width="375" height="231" id="Image36"></a></p>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> ¿Que es la contaminacion? </h2>
+    <p> Se muestra la definicion </p>
+    </a>
+  </li>
+</ul>
+</div>
+
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+ <li class="ui-first-child ui-last-child">
+  <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Tipos de contaminacion </h2>
+  <p> Se muestran los tipos de contaminacion </p>
+  </a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Consecuencias de la contaminacion </h2>
+<p> Muestran las consecuencias de la contaminacion</p>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+  <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Medidas de prevencion </h2>
+  <p> Se muestran los tipos de contaminacion </p>
+  </a>
+</li>
+<li class="ui-first-child ui-last-chld">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Reciclaje</h2>
+<p> Muestra que es el reciclaje</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Contaminacion en mi entorno</h2>
+<p> Muestra imagenes sobre la contaminacin </p>
+</a>
+</li>
+</ul>
+</div>
+
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="imagenes/logo.png" widht="50" height="50">
+</div>
+<div> 
+<h4> Aplicacion Dos </h4>
+<h4>Vanessa Ramirez Aguirre </h4>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> Definicion</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>La Contaminación se denomina a la presencia en el ambiente de cualquier agente químico, físico o biológico nocivos para la salud o el bienestar de la población, de la vida animal o vegetal. Esta degradación del medio ambiente por un contaminante externo puede provocar daños en la vida cotidiana del ser humano y alterar las condiciones de supervivencia de la flora y la fauna. </h2>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Ciudad antes y despues de ser contaminada </h1>
+<div>
+<p>El antes y despues de una ciudad contaminada: </p>
+</div>
+<div>
+<img src="imagenes/contaminacion.jpg" width="85%" height="70%"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4> Aplicacion Dos, VRA </h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> Tipos de contaminacion</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Contaminación del Agua</h2>
+<p>La contaminación del agua se refiere a la elteración de las condiciones naturales del agua de rios, lagos, yacimientos, mares, etc. producida por distintas actividades como: deshecho de residuos sólidos y líquidos domésticos e industriales de cualquier tipo.</p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Contaminacion del agua </h1>
+<div>
+<p> Asi es como se ve: </p>
+</div>
+<div>
+<img src="imagenes/agua.jpg" width="85%" height="70%">
+</div>
+ </div>
+  </div>
+  
+<h2>Contaminación del aire.</h2>
+<p>Ocurre por la presencia de contaminantes disueltos en el aire o suspendidos en el y que alteran su calidad y que afectan la susbsistencia de los seres vivos.
+Loa pricipales contaminantes del aire son los gases de combustión, CO, CO2, NOx, SOx que se producen por los automóviles, por las industrias, hogares, y la quema de cualquier combustible.</p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Contaminacion del aire </h1>
+<div>
+<p> Asi es como se ve: </p>
+</div>
+<div>
+<img src="imagenes/aire.jpg" width="85%" height="70%">
+</div>
+ </div>
+  </div>
+  
+<h2>Contaminación del suelo.</h2>
+<p>Es el desequilibrio físico, químico y biológico del suelo y que afecta a los seres vivos sean estos plantas o organismos vivos.
+Se produce por desechar compuestos extraños al suelo como por ejemplo aceites o disolventes, petróleo, fertilizantes, pesticidas y otros productos agroquímicos usados en exceso.</p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Contaminacion del suelo </h1>
+<div>
+<p> Asi es como se ve: </p>
+</div>
+<div>
+<img src="imagenes/suelo.jpg" width="85%" height="70%">
+</div>
+ </div>
+  </div>
+  
+<h2>Contaminación acustica.</h2>
+<p>También llamada contaminación auditiva, es la contaminación por el ruido que molesta la tranquilidad y la salud de todos los seres vivos. El ruido lo causan muchas actividades humanas, coches, aviones, motores, máquinas industreiales, la música a lalto volumen, explosiones, la industria de la contrucción, etc.</p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Contaminacion acustica </h1>
+<div>
+<p> Asi es como se ve: </p>
+</div>
+<div>
+<img src="imagenes/acustica.jpg" width="85%" height="70%">
+</div>
+ </div>
+  </div>
+  
+<h2>Contaminación visual.</h2>
+<p>Es la ruptura del equilibrio natural del paisaje por la gran cantidad de avisos publicitarios o colores que por su variedad e intensidad afectan las condiciones de vida de los seres vivos. La causan los letreros o anuancios publicitarios, los colores y luces intensos, y el crecimiento de la mancha urbana.</p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Contaminacion visual </h1>
+<div>
+<p> Asi es como se ve: </p>
+</div>
+<div>
+<img src="imagenes/visual.jpg" width="85%" height="70%">
+</div>
+ </div>
+  </div>
+  
+<h2>Contaminación térmica.</h2>
+<p>Se refiere a el aumento de la temperatura de la tierra y que produce cambios en el clima y diversos fenómenos climáticos como sequías, inundaciones, etc.provocado por diversas fuentes de energía como gases de invernadero, motores, luces o por el calor emitido por actividades industriales o el uso de maquinaria.</p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Contaminacion termica </h1>
+<div>
+<p> Asi es como se ve: </p>
+</div>
+<div>
+<img src="imagenes/termica.jpg" width="85%" height="70%">
+</div>
+ </div>
+  </div>
+  
+<h2>Contaminación radioactiva.</h2>
+<p>Es la contaminación del ambiente ocasinado por los desechos radiactivos. Pude ocurrir por un accidente o por el desecho no controlado de sustancias radiactivas a la basura. Los accidentes en plantas nucleares ha sido la principal causa de contaminación radioactiva.</p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Contaminacion radioactiva</h1>
+<div>
+<p> Asi es como se ve: </p>
+</div>
+<div>
+<img src="imagenes/radiactiva.jpg" width="85%" height="70%">
+</div>
+ </div>
+  </div>
+  
+<h2>Contaminación lumínica.</h2>
+<p>Es la contaminación por un exceso de luz en el ambiente causada por la iluminación en las ciudades.</p>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Contaminacion luminica </h1>
+<div>
+<p> Asi es como se ve: </p>
+</div>
+<div>
+<p align="center"><img src="imagenes/luminica.gif" width="85%" height="70%">
+</div>
+ </div>
+  </div>
+  
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4> Aplicacion Dos, VRA </h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1> Consecuencias de la contaminacion</h1>
+ </div>
+   <div data-role="content" align="center">
+   <div>
+   <h2>Enfermedades</h2>
+ <p>La contaminación no afecta sólo al medio, sino que directamente afecta a nuestra salud, y muchas enfermedades, como el cáncer, el asma o las atopias, se han incrementado de forma exorbitante en los últimos años. Produce daños en el desarrollo de los embriones: riesgos de incremento de cáncer de pulmón o bajo peso en los recién nacidos. Y estos son sólo algunos de los daños de salud que han revelado estos estudios. </p>
+     
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Enfermedades </h1>
+<div>
+<p>Las personas deben andar con cubrebocas:</p>
+</div>
+<div>
+<img src="imagenes/enfermedades.jpg" width="85%" height="70%">
+</div>
+</div>
+</div>
+
+<h2>El suelo</h2>
+<p>La contaminación de los suelos hace que la siembra sea imposible, lo que tiene un doble efecto. Por una parte, hay escasez de alimentos, y por la otra el clima se ve afectado debido a la ausencia de plantas. La deforestación es otro de los efectos de la contaminación de los suelos, ya que se gana terreno al bosque para reemplazar los terrenos perdidos. Los vertederos al aire libre o cementerios nucleares son buenos ejemplos de contaminación del suelo. </p>
+     
+ <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Contaminacion del suelo </h1>
+<div>
+<p> Asi se ve: </p>
+</div>
+<div>
+<img src="imagenes/contSuelo.jpg" width="85%" height="70%"></div>
+</div>
+</div>
+
+<h2> Flora y fauna</h2>
+<p>Las plantas ven como la polución afecta su crecimiento, y muchas especies no han podido adaptarse a la escasez de lluvias, la contaminación del aire o el agua, etc., lo que ha supuesto su desaparición y la aceleración de la desertificación. En cuanto a los animales, muchas especies terrestres han visto alterado su hábitat por culpa de la contaminación ambiental, han perdido sus fuentes de alimentos, etc. En ocasiones son acciones hechas a propósito que han llevado a algunas especies al peligro de extinción.</p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Contaminacion de la flora y fauna </h1>
+<div>
+<p> Este es un rio contaminado: </p>
+</div>
+<div>
+<img src="imagenes/florayfauna.jpg" width="85%" height="70%"></div>
+</div>
+</div>
+
+<h2>Calentamiento Global</h2>
+<p>Se refiere al aumento gradual de las temperaturas de la atmósfera y océanos de la Tierra que se ha detectado en la actualidad, además de su continuo aumento que se proyecta a futuro.
+Un aumento de la temperatura global resultará en cambios como ya se están observando a nivel mundial, podemos enumerar:
+Aumento de los niveles del mar
+Cambios en el patrón y cantidad de precipitaciones
+Expansión de los desiertos subtropicales </p>
+<p>Otros efectos incluirían clima extremo más frecuente, lo que incluye sequías, olas de calor, huracanes y precipitaciones fuertes. Se esperan extinciones de especies debido a los cambios de temperatura y variaciones fuertes en el rendimiento de las cosechas.
+Se postula que si el aumento de la temperatura promedio global es mayor a 4ºC comparado con las temperaturas preindustriales, en muchas partes del mundo ya los sistemas naturales no podrán adaptarse y, por lo tanto, no podrán sustentar a sus poblaciones circundantes. En pocas palabras, no habrán recursos naturales para sustentar la vida humana en las condiciones actuales.</p>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Calentamiento Global </h1>
+<div>
+<p> Así funciona: </p>
+</div>
+<div>
+<img src="imagenes/calentamientoGlobal.jpg" width="85%" height="70%"></div>
+</div>
+ </div>
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Dos, VRA</h4>
+ </div>
+</div>
+     
+     
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Medidas de prevencion</h1>
+</div>
+<div data-role="content">
+<div>
+ <ul>
+ <li>Afina y da mantenimiento a los automóviles</li>
+ <li>Evita quemar basura y llantas, así como el uso de cohetes artificiales.</li>
+ <li>Evita comprar artículos desechables y plásticos que no son biodegradables.</li>
+ <li>Recicla la basura</li>
+ <li>No arrojes basura en la calle, bosques y parques, envuélvela o tápala bien en la casa.</li>
+ <li>Usa racionalmente los plaguicidas</li>
+ <li>Evita el consumo de tabaco.</li>
+ <li> Cuida los bosques al no provocar incendios ni destruir las zonas verdes de la ciudad
+ <li>Pospón las tareas de jardinería que requieran el uso de herramientas a gasolina en días de alto nivel de de ozono.</li>
+ <li> Consume alimentos orgánicos o al menos aquellos no hayan sido sometidos a un uso tan intensivo de agroquímicos. (puedes cultivarlos en tú azotea con composta hecha por ti mismo)</li>
+ <li>Restringe la limpieza en seco.</li>
+ <li>Evita el uso de pinturas, aceites y solventes en días de alta concentración de ozono.</li>
+ <li>Reduce el consumo de electricidad, lo cual contribuirá a disminuir las emanaciones de contaminantes y partículas.</li>
+ <li>Prende el carbón de leña con un encendedor eléctrico en vez de hacerlo con combustible líquido.</li>
+ <li>Aplica el poder de las 3 Erres: Reduce-Reutiliza-Recicla. Un menor consumo redundará en menor contaminación atmosférica de todo tipo.</li>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Reduce, Reutiliza, Recicla. </h1>
+<div>
+<p> : </p>
+</div>
+<div>
+<img src="imagenes/rrr.jpg" width="85%" height="70%"></<div>
+</div>
+ </div>
+ </div>
+   
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4> Aplicacion Dos, VRA </h4>
+ </div>
+</div>
+
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Reciclaje</h1>
+</div>
+<div data-role="content" align="center">
+<div> 
+<h2>¿Que es el reciclaje?</h2>
+<p>El reciclaje consiste en obtener una nueva materia prima o producto, mediante un proceso fisicoquímico o mecánico, a partir de productos y materiales ya en desuso o utilizados. De esta forma, conseguimos alargar el ciclo de vida de un producto, ahorrando materiales y beneficiando al medio ambiente al generar menos residuos.El reciclaje surje no sólo para eliminar residuos, sino para hacer frente al agotamiento de los recursos naturales del planeta.</p>
+<h2>El proceso del reciclaje</h2>
+<p>Todo este proceso del reciclaje, pasa por varias fases:
+El reciclaje comienza en entornos industriales y domésticos, mediante la separación de los materiales. El siguiente paso consiste en la recuperación de estos materiales por las empresas públicas y privadas y su posterior traslado a las plantas de transferencia.
+En estas plantas, se almacenan y compactan grandes cantidades de residuos, para su posterior transporte en grandes cantidades hacia las plantas de reciclaje, llamadas plantas clasificadoras. Es aquí cuando se hace una separación exhaustiva de los residuos. En estas plantas, encontramos en algunos casos, las plantas de valoración, o reciclador final, donde se obtienen nuevas materias o productos, se almacenan los materiales en grandes vertederos, o bien se produce energía como es el caso de las plantas de biogas.</p>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Clasificacion del reciclaje: </h1>
+<div>
+</div>
+<div><img src="imagenes/reciclaje.png" width="85%" height="70%"></<div>
+</div>
+ </div>
+ </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4> Aplicacion Dos, VRA </h4>
+ </div>
+</div>
+    
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> Contaminacion en mi entorno</h1>
+</div>
+<div data-role="content" align="center">
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/img1.jpg" alt="" title="" id="wows1_0"/></li>
+		<li><img src="data1/images/img2.jpg" alt="" title="" id="wows1_1"/></li>
+		<li><img src="data1/images/img3.jpg" alt="" title="" id="wows1_2"/></li>
+		<li><img src="data1/images/img4.jpg" alt="" title="" id="wows1_3"/></li>
+		<li><img src="data1/images/img5.jpg" alt="" title="" id="wows1_4"/></li>
+		<li><img src="data1/images/img6.jpg" alt="" title="" id="wows1_5"/></li>
+		<li><img src="data1/images/img7.jpg" alt="" title="" id="wows1_6"/></li>
+		<li><img src="data1/images/img8.jpg" alt="" title="" id="wows1_7"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/img9.jpg" alt="wow slider" title="" id="wows1_8"/></a></li>
+		<li><img src="data1/images/img10.jpg" alt="" title="" id="wows1_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title=""><span><img src="data1/tooltips/img1.jpg" alt=""/>1</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img2.jpg" alt=""/>2</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img3.jpg" alt=""/>3</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img4.jpg" alt=""/>4</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img5.jpg" alt=""/>5</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img6.jpg" alt=""/>6</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img7.jpg" alt=""/>7</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img8.jpg" alt=""/>8</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img9.jpg" alt=""/>9</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img10.jpg" alt=""/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">wowslider.net</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+
+<h2> Mi propuesta para combatir la contaminacion</h2>
+<p>El Estado debe preocuparse del problema de la contaminación, dando leyes severas, controlando su cumplimiento y sancionando a las personas que contaminen en cualquier aspecto. El problema ambiental es un problema que afecta al bien común y a la calidad de la vida, es una responsabilidad del Estado, como representante, del bienestar de todos los ciudadanos.También incumbe a los gobiernos municipales, responsables directos de la disposición de la basura y las aguas servidas; del control del parque automotor; de las áreas verdes; del control de los ruidos molestos, etc.
+ Los ciudadanos deben tomar más conciencia del problema, exigir respeto por el medio ambiente y no contribuir a su deterioro. El aporte de los ciudadanos, individualmente, puede ser muy grande en algunos aspectos:
+· No arrojar la basura y los desechos en las calles ni en cualquier lugar.
+· Evitar los ruidos molestos, tanto a nivel de barrio (escapes abiertos, bocinas, música fuerte) como a nivel doméstico.
+· Erradicar hábitos sumamente contaminantes, como el escupir y hacer deposiciones en la calle o en los parques y jardines, etc.
+· Sembrar árboles y colaborar en el mantenimiento de las áreas verdes.
+· No utilizar productos que contienen contaminantes, como CFC (desodorantes en aerosol), gasolina con plomo, etc.
+
+Si todos analizaramos la gravedad del problema y actuaramos contra ello, el Planeta Tierra, nuestra casa, seria un lugar mejor.
+</p>
+<h2>Organizaciones que protegen el medio ambiente</h2>
+<p><a href="http://www.cemda.org.mx/" target="_self">Centro Mexicano de Derecho Ambiental (CEMDA):</a> formada por un grupo de abogados que hace investigaciones sobre medio ambiente, documenta agresiones contra los ecologistas y hace pronunciamientos, dirigidos mayormente al gobierno, para la mejora y correcta aplicación de las normas ambientales.</p>
+
+<p><a href="http://www.pronatura.org.mx/" target="_self">Pronatura México:</a> tiene ya 30 años promoviendo cambios en las legislaciones para proteger al medio ambiente. Ha obtenido, entre otros logros, la reforestación de más de 30 millones de árboles nativos en bosques tropicales, el decreto de veda total y permanente para las especies y subespecies de tortuga marina, etc.</p>
+
+<p><a href="http://www.wwf.org.mx/" target="_self">WWF-México:</a> también conocida como Fondo Mundial para la Naturaleza, es considerada la organización líder de conservación mundial. Nacida en Suiza en 1961, esta asociación trabaja en México desde 1990 y ha ejercido acciones para la preservación en zonas como el desierto chihuahuense, el golfo de California y el santuario de la mariposa monarca.</p>
+
+<p><a href="http://www.greenpeace.org/mexico/es/">Greenpeace México</a>: esta asociación internacional es quizá la más popular del mundo. Además de hacer un creativo activismo, es un fuerte crítico de las políticas gubernamentales antiecológicas. Aunado a ello, hace un monitoreo de omisiones al medio ambiente en este país, como los derrames diarios de petróleo.</p>
+
+<h2><a href="http://es.wikihow.com/ayudar-a-detener-la-contaminaci%C3%B3n" target="_self">¿Que puedes hacer para ayudar a detener la contaminacion?</a></h2>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4> Aplicacion, Dos VRA </h4>
+</div>
+</div>
+
+</body>
+</html>
